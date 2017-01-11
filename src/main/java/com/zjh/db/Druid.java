@@ -13,7 +13,7 @@ public class Druid {
 	static {
 		try {
 			// 加载dbcp.properties配置文件
-			InputStream in = DBCP.class.getClassLoader().getResourceAsStream(
+			InputStream in = Druid.class.getClassLoader().getResourceAsStream(
 					"druid.properties");
 			Properties prop = new Properties();
 			prop.load(in);
